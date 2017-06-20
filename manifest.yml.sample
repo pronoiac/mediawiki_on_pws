@@ -1,0 +1,10 @@
+---
+applications:
+- name: "example wiki"
+  host: "example wiki"
+  memory: 256M
+  #buildpack: php_buildpack # https://github.com/cloudfoundry/php-buildpack
+  buildpack: https://github.com/heroku/heroku-buildpack-php
+env:
+  SECRET_KEY: changeme
+  UPGRADE_KEY: changeme
